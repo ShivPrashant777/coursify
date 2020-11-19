@@ -104,6 +104,7 @@ a {
 		border-radius: 5px;
 		margin: 10px 0;
 		width: 200px;
+		min-height: 122px;
 
 		border: 1px black solid;
 
@@ -123,6 +124,17 @@ a {
 
 .subjects {
 	text-align: center;
+}
+
+.books-container {
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	.vertical-card {
+		display: block;
+		margin: 10px auto;
+	}
 }
 
 .subj-ver {
@@ -156,6 +168,7 @@ a {
 			img {
 				width: 150px;
 				border-radius: 150px;
+				border: 1px solid gray;
 			}
 		}
 	}
@@ -240,6 +253,16 @@ a {
 	.doubts {
 		.left {
 			text-align: left;
+		}
+	}
+
+	.books-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		.vertical-card {
+			display: block;
+			margin: 10px auto;
 		}
 	}
 }

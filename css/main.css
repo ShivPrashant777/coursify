@@ -130,6 +130,7 @@ a {
   border-radius: 5px;
   margin: 10px 0;
   width: 200px;
+  min-height: 122px;
   border: 1px black solid;
   margin: 10px;
 }
@@ -148,6 +149,21 @@ a {
 
 .subjects {
   text-align: center;
+}
+
+.books-container {
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.books-container .vertical-card {
+  display: block;
+  margin: 10px auto;
 }
 
 .subj-ver {
@@ -196,6 +212,7 @@ a {
 .how-it-works .steps .vertical-pair img {
   width: 150px;
   border-radius: 150px;
+  border: 1px solid gray;
 }
 
 .center-btn {
@@ -285,6 +302,18 @@ a {
   }
   .doubts .left {
     text-align: left;
+  }
+  .books-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  .books-container .vertical-card {
+    display: block;
+    margin: 10px auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
