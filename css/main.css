@@ -1,0 +1,290 @@
+* {
+  margin: 0px;
+  padding: 0;
+}
+
+.navbar-brand {
+  margin-left: 10px;
+}
+
+.navbar-brand h2 {
+  color: #1212b8;
+}
+
+#navbarNav {
+  margin-right: 40px;
+  font-weight: bold;
+}
+
+nav li {
+  padding: 10px;
+}
+
+a {
+  color: black;
+}
+
+.highlight {
+  color: #1212b8;
+}
+
+.hero,
+.doubts,
+.live-classes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.jee .right-text .pair .text,
+.neet .right-text .pair .text {
+  text-align: center;
+}
+
+.left,
+.right-text {
+  text-align: center;
+}
+
+.left h1,
+.right-text h1 {
+  font-size: 2em;
+  padding-bottom: 20px;
+}
+
+.right img,
+.left-img img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 60%;
+  max-width: 400px;
+  max-height: 100px;
+  margin: 10px 0;
+}
+
+.card-container .card img {
+  display: block;
+  width: 40%;
+  max-width: 130px;
+}
+
+.card-container .card .text {
+  width: 100%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.card-container .card p {
+  margin: 0;
+}
+
+.card-container .vertical-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 5px;
+  margin: 10px 0;
+  width: 200px;
+  border: 1px black solid;
+  margin: 10px;
+}
+
+.card-container .vertical-card img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-container .vertical-card .text {
+  text-align: center;
+  margin: 0;
+}
+
+.subjects {
+  text-align: center;
+}
+
+.subj-ver {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.subj-ver .vertical-card {
+  display: block;
+  margin: 10px auto;
+}
+
+.pair {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pair .text {
+  margin-left: 20px;
+  text-align: left;
+}
+
+.how-it-works {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.how-it-works .steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.how-it-works .steps .vertical-pair {
+  margin: 0 20px;
+}
+
+.how-it-works .steps .vertical-pair img {
+  width: 150px;
+  border-radius: 150px;
+}
+
+.center-btn {
+  text-align: center;
+}
+
+@media only screen and (min-width: 750px) {
+  body {
+    padding: 0 5px;
+  }
+  .navbar-brand {
+    margin-left: 50px;
+  }
+  .hero,
+  .doubts,
+  .live-classes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .jee .right-text .pair .text,
+  .neet .right-text .pair .text {
+    text-align: left;
+  }
+  .left,
+  .right-text {
+    width: 50%;
+    margin: 0 40px;
+    text-align: center;
+  }
+  .left h1,
+  .right-text h1 {
+    font-size: 2.5rem;
+  }
+  .right,
+  .left-img {
+    width: 50%;
+  }
+  .right img,
+  .left-img img {
+    padding: 50px 0;
+    width: 50%;
+    min-width: 400px;
+  }
+  .card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 50px;
+  }
+  .card-container .card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 50%;
+    max-width: 300px;
+    margin: 10px;
+  }
+  .card-container .card .text {
+    padding: 10px;
+    text-align: center;
+  }
+  .card-container .vertical-card {
+    width: 200px;
+    margin: 10px;
+  }
+  .card-container .vertical-card img {
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .doubts .left {
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=main.css.map */
