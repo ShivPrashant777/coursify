@@ -31,7 +31,8 @@ a {
 
 .hero,
 .doubts,
-.live-classes {
+.live-classes,
+.testimonial {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -183,6 +184,29 @@ a {
 	text-align: center;
 }
 
+.expert-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.expert {
+	display: flex;
+	align-items: center;
+	margin: 20px 0;
+	img {
+		width: 120px;
+		border-radius: 150px;
+		margin-right: 20px;
+	}
+
+	.text {
+		padding: 5px;
+		max-height: 100px;
+		max-width: 210px;
+		border: 1px solid gray;
+	}
+}
+
 @media only screen and (min-width: 750px) {
 	body {
 		padding: 0 5px;
@@ -192,7 +216,8 @@ a {
 	}
 	.hero,
 	.doubts,
-	.live-classes {
+	.live-classes,
+	.testimonial {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -280,6 +305,17 @@ a {
 			grid-column-end: 3;
 		}
 	}
+
+	.expert-container {
+		flex-direction: row;
+		margin: 50px 0;
+		.expert {
+			margin: 0 auto;
+			img {
+				width: 150px;
+			}
+		}
+	}
 }
 
 @media only screen and (min-width: 1170px) {
@@ -296,6 +332,12 @@ a {
 		.row3 {
 			grid-column-start: 4;
 			grid-column-end: 5;
+		}
+	}
+
+	.expert-container {
+		.expert {
+			margin: 0 80px;
 		}
 	}
 }
