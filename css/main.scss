@@ -1,6 +1,10 @@
 * {
 	margin: 0px;
 	padding: 0;
+	h1 {
+		font-size: 2em;
+		font-weight: 800;
+	}
 }
 
 .navbar-brand {
@@ -37,6 +41,7 @@ a {
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
+	font-size: 0.9em;
 }
 
 .jee,
@@ -76,17 +81,19 @@ a {
 	.card {
 		display: flex;
 		flex-direction: row;
-
 		border-top-right-radius: 30px;
 		border-bottom-right-radius: 30px;
 		width: 60%;
 		max-width: 400px;
 		max-height: 100px;
 		margin: 10px 0;
+		border: none;
+		box-shadow: 1px 1px 4px 0px rgba(50, 50, 50, 0.1);
 
 		img {
 			display: block;
 			width: 40%;
+			min-width: 80px;
 			max-width: 130px;
 		}
 
@@ -109,7 +116,7 @@ a {
 		min-height: 122px;
 		max-height: 122px;
 		background: white;
-		border: 1px black solid;
+		box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.1);
 
 		margin: 10px;
 		img {
@@ -204,12 +211,17 @@ a {
 		padding: 5px;
 		max-height: 100px;
 		max-width: 210px;
-		border: 1px solid gray;
+		box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.3);
 	}
 }
 
 .shape-container {
 	display: none;
+}
+
+.card:hover,
+.vertical-card:hover {
+	box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.4);
 }
 
 @media only screen and (min-width: 750px) {
@@ -266,7 +278,13 @@ a {
 			width: 50%;
 			max-width: 300px;
 			margin: 10px;
+			img {
+				width: 40%;
+				min-width: 80px;
+				max-width: 130px;
+			}
 			.text {
+				overflow: hidden;
 				padding: 10px;
 				text-align: center;
 			}
@@ -335,6 +353,7 @@ a {
 		top: 50px;
 		right: 0;
 		z-index: -1;
+		opacity: 0.8;
 	}
 
 	.shape-right {
@@ -349,6 +368,11 @@ a {
 	.shape-s {
 		width: 500px;
 	}
+}
+
+footer {
+	text-align: center;
+	background: rgb(247, 247, 247);
 }
 
 @media only screen and (min-width: 1170px) {
