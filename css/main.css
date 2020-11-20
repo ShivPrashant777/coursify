@@ -138,6 +138,7 @@ a {
   width: 170px;
   min-height: 122px;
   max-height: 122px;
+  background: white;
   border: 1px black solid;
   margin: 10px;
 }
@@ -268,6 +269,10 @@ a {
   border: 1px solid gray;
 }
 
+.shape-container {
+  display: none;
+}
+
 @media only screen and (min-width: 750px) {
   body {
     padding: 0 5px;
@@ -306,13 +311,13 @@ a {
   }
   .right,
   .left-img {
-    width: 50%;
+    width: 60%;
   }
   .right img,
   .left-img img {
     padding: 50px 0;
-    width: 50%;
-    min-width: 400px;
+    min-width: 300px;
+    max-width: 600px;
   }
   .card-container {
     display: -webkit-box;
@@ -389,6 +394,30 @@ a {
   .expert-container .expert img {
     width: 150px;
   }
+  .shape-container {
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .shape {
+    position: relative;
+    top: 50px;
+    right: 0;
+    z-index: -1;
+  }
+  .shape-right {
+    float: right;
+    left: 0;
+    right: 0;
+  }
+  .shape-l {
+    width: 700px;
+  }
+  .shape-s {
+    width: 500px;
+  }
 }
 
 @media only screen and (min-width: 1170px) {
@@ -415,6 +444,11 @@ a {
   }
   .expert-container .expert {
     margin: 0 80px;
+  }
+  .right,
+  .left-img {
+    max-width: 1000px;
+    width: 1000px;
   }
 }
 /*# sourceMappingURL=main.css.map */
