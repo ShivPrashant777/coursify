@@ -1,13 +1,19 @@
 * {
-	margin: 0px;
+	margin: 0 2px;
 	padding: 0;
 	h1 {
 		font-size: 2em;
 		font-weight: 800;
 	}
+	h2,
+	h3,
+	h4 {
+		font-size: 1.5em;
+	}
 }
 
 .navbar-brand {
+	cursor: pointer;
 	margin-left: 10px;
 	h2 {
 		color: rgb(18, 18, 184);
@@ -202,12 +208,13 @@ a {
 	align-items: center;
 	margin: 20px 0;
 	img {
-		width: 120px;
+		width: 100px;
 		border-radius: 150px;
 		margin-right: 20px;
 	}
 
 	.text {
+		font-size: 1em;
 		padding: 5px;
 		max-height: 100px;
 		max-width: 210px;
@@ -219,12 +226,23 @@ a {
 	display: none;
 }
 
+.testimonial {
+	margin-top: 50px;
+}
+
 .card:hover,
 .vertical-card:hover {
 	box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.4);
+	cursor: pointer;
 }
 
 @media only screen and (min-width: 750px) {
+	* {
+		h2,
+		h3 {
+			font-size: 2rem;
+		}
+	}
 	body {
 		padding: 0 5px;
 	}
